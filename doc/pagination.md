@@ -28,8 +28,10 @@ function loadPageData(page){
 ```
 ## loading效果
 如果要在表格上启动加载效果，可以设置loading为true，在加载数据完成后再置为false。加载图标使用font-awsome4.x图标，因此使用此属性时需要引入font-awesome的样式库，当然，这不是必须的，也可以自定义加载效果，此div上有样式tcl-table-loading，可对其重新定义，包括加载图标的大小和颜色也可自行修改。
+```js
 function loadPageData(page){
 	//$scope.dataTable.loading=true
 	//send http request
 	//then set the response data to dataTable.data，and the total rows to dataTable.totalItems; set the loading to false;
 }
+```
