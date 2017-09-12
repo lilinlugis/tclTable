@@ -8,7 +8,7 @@ Table with configuration in Angular controller $scope object and structure HTML 
 
 
 # enviroments 
-This project based on FIS3 to do the compile work, cause the tcl.table module is write in ES6 and SASS. You can also use other tools such as webpack or gulp.
+This project based on [FIS3](http://fis.baidu.com) to do the compile work, cause the tcl.table module is write in ES6 and SASS. You can also use other tools such as webpack or gulp.
 因为tcl.table模块是使用ES6和SASS来写的，因此需要脚手架来完成编译的工作，你也可以使用其他构建工具，比如webpack或gulp。
 
 I used nginx as web server，you can use other webserver such as tomcat or JS server write with nodeJS.
