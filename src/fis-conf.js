@@ -28,6 +28,6 @@ fis.match('*.css', {useHash: false,optimizer: fis.plugin('clean-css')});
 // 直接 release 到本地项目的target目录下
 fis.match('*', {
 	deploy: fis.plugin('local-deliver', {
-		to: '../../dist'
+		to: '../dist'
 	})
 });
