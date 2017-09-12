@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>helloTable</title>
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+	<link rel="styleSheet" href="tcl.table.simple.scss"/>
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/angular/angular.min.js"></script>
+    <script src="tclSimpleTable.es6"></script>
+    <script src="styles.es6"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myCtrl">
+        <h4>表格示例</h4>
+        <div class="table-overflow" tcl-table-simple="dataTable"></div>
+	</div>
+</body>
+</html>
