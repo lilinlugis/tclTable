@@ -3,7 +3,7 @@
 Javascript code:
 ```js
 var app=angular.module('myApp',['tcl.table']);
-app.controller('myCtrl',["$scope"){
+app.controller('myCtrl',["$scope",function($scope){
 	$scope.dataTable={
 		columns:[ 
 			{field:"id",displayName:"编号"},
@@ -17,6 +17,7 @@ app.controller('myCtrl',["$scope"){
 
 		]
 	};
+}]);
 ```
 2、在HTML中引用样式和指令
 ```html
@@ -25,14 +26,12 @@ app.controller('myCtrl',["$scope"){
 <head>
 	<meta charset="UTF-8">
 	<title>tclTable快速入门</title>
-    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../plugins/fontawesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../plugins/animate/animate.min.css" />
-	<link rel="styleSheet" href="../plugins/tcl/tcl.table.simple.scss"/>
-	<script src="../plugins/jquery/jquery.min.js"></script>
-	<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../plugins/angular/angular.min.js"></script>
-    <script src="../plugins/tcl/tclSimpleTable.es6"></script>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+	<link rel="styleSheet" href="tcl.table.simple.scss"/>
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/angular/angular.min.js"></script>
+    <script src="tclSimpleTable.es6"></script>
     <script src="helloTable.es6"></script>
 </head>
 <body ng-app="myApp">
