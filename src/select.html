@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>行选择</title>
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+	<link rel="styleSheet" href="tcl.table.simple.scss"/>
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/angular/angular.min.js"></script>
+    <script src="tclSimpleTable.es6"></script>
+    <script src="select.es6"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myCtrl" class="container">
+        <h4>行单选</h4>
+        <button class="btn btn-warning" ng-disabled="dataTable1.selectedRow==null" style="margin-bottom: 15px;">此按钮的状态根据选择情况判断</button>
+        <div class="table-overflow" tcl-table-simple="dataTable1"></div>
+        <h4>行多选</h4>
+        <button class="btn btn-primary" ng-disabled="dataTable2.selectedRows==null || dataTable2.selectedRows==false" style="margin-bottom: 15px;">此按钮的状态根据选择情况判断</button>
+        <div class="table-overflow" tcl-table-simple="dataTable2"></div>
+        <h4>行单选列</h4>
+        <div class="table-overflow" tcl-table-simple="dataTable3"></div>
+        <h4>行多选列</h4>
+        <div class="table-overflow" tcl-table-simple="dataTable4"></div>
+	</div>
+</body>
+</html>
