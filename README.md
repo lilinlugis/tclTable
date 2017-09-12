@@ -15,5 +15,5 @@ I used nginx as web server，you can use other webserver such as tomcat or JS se
 我使用了nginx做为web server,你也可以使用其他服务器软件，比如tomcat或者自己用nodeJS写一个。
 
 # demonstrations
-This project is support by Li Linlu, and any used in commertial bussiness should has an agreement.
-本项目作者是李林禄，任何商业用途都需经过作者同意。
+This project is support by Li Linlu, and any used in commertial bussiness should has a MIT contract.
+本项目作者是李林禄，任何商业用途都需要包含MIT协议。
