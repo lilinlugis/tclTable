@@ -1,6 +1,6 @@
 # 单元格模板
 
-** cellTemplate **
+**cellTemplate**
 
 在列的定义里可以使用cellTemplate，以便实现更加高级的功能，比如对数据进行翻译，或格式化输出，或者实现编辑功能。
 
