@@ -1,0 +1,42 @@
+var app=angular.module('myApp',['tcl.table']);
+app.controller('myCtrl',["$scope",function($scope){
+	$scope.dataTable={
+		showGroupHeader:true,
+		columns:[ 
+			{field:"id",displayName:"编号"},
+			{field:"name",displayName:"姓名"}, 
+			{field:"sex",displayName:"性别"},
+			{field:"age",displayName:"年龄"},
+			{field:"registtime",displayName:"注册日期"},
+			{field:"status",displayName:"状态"}
+		],
+		data: [   
+			{id:1,name:"曹操",sex:"男",age:45,registtime:"1024",status:"启用",subTable:{
+				title:"爱好",
+				columns:[
+					{field:"name",displayName:"名称"},
+					{field:"level",displayName:"段位"},
+					{field:"exp",displayName:"经验"}
+				],
+				data:[
+					{name:"乒乓球",level:8,exp:"10年"},
+					{name:"羽毛球",level:4,exp:"1年3个月"},
+					{name:"攀岩",level:2,exp:"1年"}
+				]
+			}},
+			{id:1,name:"曹操",sex:"男",age:45,registtime:"1024",status:"启用",subTable:{
+				title:"推荐书籍",
+				columns:[
+					{field:"name",displayName:"书名"},
+					{field:"author",displayName:"作者"},
+					{field:"price",displayName:"价格"}
+				],
+				data:[
+					{name:"《二战记实》",author:"乔阿布斯",price:"15"},
+					{name:"《卡耐饥成功哲学》",author:"卡耐饥",price:6},
+					{name:"《简爱》",author:"洛伍德",price:12}
+				]
+			}}
+		]
+	};
+}]);
