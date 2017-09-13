@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多行表头</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+	<link rel="styleSheet" href="tcl.table.simple.scss"/>
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/angular/angular.min.js"></script>
+    <script src="tclSimpleTable.es6"></script>
+    <script src="multiheader.es6"></script>
+    <style>
+        .table>tbody>tr.primary>td, .table>tbody>tr.primary>th, .table>tbody>tr>td.primary, .table>tbody>tr>th.primary, .table>tfoot>tr.primary>td, .table>tfoot>tr.primary>th,
+        .table>tfoot>tr>td.primary, .table>tfoot>tr>th.primary, .table>thead>tr.primary>td, .table>thead>tr.primary>th, .table>thead>tr>td.primary, .table>thead>tr>th.primary {
+            background-color: #4289c5;
+        }
+        .primary{
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<div class="app" ng-app="sampleApp">
+    <div class="page"  ng-controller="sampleCtrl">
+        <h2>多行表头</h2>
+        <div class="table-overflow" ui-grid-simple="itemsTable"></div>
+        <h2>通过模板字符串自定义表头</h2>
+        <!--方案一，模板写在scope变量上-->
+        <div class="table-overflow" tcl-table-custom-header="dataTable0" tcl-table-pagination header-template="customHeader"></div>
+        <h2>通过模板文件自定义表头</h2>
+        <!--模板写在独立文件里-->
+        <div class="table-overflow" tcl-table-custom-header="dataTable1" tcl-table-pagination header="template/test.html"></div>
+        <h2>通过columns自定义表头(复合数据)</h2>
+        <div class="table-overflow" tcl-table-multi-columns="dataTable2"  tcl-table-pagination></div>  
+        <h2>通过columns自定义表头(简单数据)</h2>
+        <div class="table-overflow" tcl-table-multi-columns="dataTable3"  tcl-table-pagination> </div>  
+    </div>
+</div>
+
+</body>
+</html>
