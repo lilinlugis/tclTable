@@ -12,22 +12,28 @@ $scope.dataTable={
 		{field:"status",displayName:"状态"}
 	],
 	data: [   
-		{id:1,name:"曹操",sex:"男",age:45,registtime:"1024",status:"启用",subTable:{
-			columns:[
-				{field:"name",displayName:"名称"},
-				{field:"level",displayName:"段位"},
-				{field:"exp",displayName:"经验"}
-			],
-			data:[
-				{name:"乒乓球",level:8,exp:"10年"},
-				{name:"羽毛球",level:4,exp:"1年3个月"},
-				{name:"攀岩",level:2,exp:"1年"}
-			]
-		}}
+		{
+			id:1,name:"曹操",sex:"男",age:45,registtime:"1024",status:"启用",
+			subTable:{
+				columns:[
+					{field:"name",displayName:"名称"},
+					{field:"level",displayName:"段位"},
+					{field:"exp",displayName:"经验"}
+				],
+				data:[
+					{name:"乒乓球",level:8,exp:"10年"},
+					{name:"羽毛球",level:4,exp:"1年3个月"},
+					{name:"攀岩",level:2,exp:"1年"}
+				]
+			}
+		}
 	]
 }
 ```
 因为每个数据行都可以带一个子表的定义，所以同一个父表里的子表可以相同也可以不同。
+
 *subTable.title* 子表的标题
+
 *dataTable.showGroupHeader* 父表中有子表的行是否要显示一个可折叠列，这样可以把不需要看的子表给折叠起来，方便查看数据。
+
 后续子表还会支持更多内容，如果有需求可以请提Issue。
