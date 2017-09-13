@@ -7,10 +7,10 @@ Table with configuration in Angular controller $scope object and structure HTML 
 使用基于Angular 控制器里$scope对象上绑定配置，结合html文档中的指令引用，提供列定义，列头样式定义，表格单元格样式定义，表格单元格自定义模板，行样式定义，行选择（支持单选和多选），分页，表格编辑，列宽拖动，多行表头，列冻结，列冻结并且列头固定等功能。
 
 tcl.table模块提供了一个服务和五个指令，这五个指令分别实现四种表格，它们分别是：
-* 1、标准表`tcl-simple-table`，又叫简单表，表头为单行，附带行选择、列宽拖动，编辑，分页等功能。
-* 2、多行表头表 `simple-table-custom-header 或 simple-table-multi-columns`，在简单表的基础上实现多行表头。
-* 3、两列表`table-besides-columns`，又叫冻结表，可以实现列冻结和多行表头，由左右两个table实现。
-* 4、复杂表`complex-table-multi-columns`，在两列表的基础上实现表头固定，表体滚动的效果，由四个table实现。
+* 1、**标准表** `tcl-simple-table`，又叫简单表，表头为单行，附带行选择、列宽拖动，编辑，分页等功能。
+* 2、**多行表头表** `simple-table-custom-header 或 simple-table-multi-columns`，在简单表的基础上实现多行表头。
+* 3、**两列表**`table-besides-columns`，又叫冻结表，可以实现列冻结和多行表头，由左右两个table实现。
+* 4、**复杂表**`complex-table-multi-columns`，在两列表的基础上实现表头固定，表体滚动的效果，由四个table实现。
 
 # enviroments 
 This project based on [FIS3](http://fis.baidu.com) to do the compile work, cause the tcl.table module is write in ES6 and SASS. You can also use other tools such as webpack or gulp.
