@@ -9,7 +9,12 @@ cellTemplate可以定义模板html，在模板里可以使用$scope上的变量�
 如果要使用当前单元格的值，可以使用row.name或row[column.field]  （假设当前列的字段为name）。
 
 ```js
-{name:"edit",displayName:"编辑",width:60,cellTemplate:'<a href="javascript:void(0);" class="text-primary" title="编辑" ng-click="edit(row)"><i  ng-class="getIcon(row)" aria-hidden="true"></i></a>'},
+{
+  name:"edit",
+  displayName:"编辑",
+  width:60,
+  cellTemplate:'<a href="javascript:void(0);" class="text-primary" title="编辑" ng-click="edit(row)"><i  ng-class="getIcon(row)" aria-hidden="true"></i></a>'
+},
 {field:"sex",displayName:"性别",cellTemplate:'<span>{{row.sex==1 ? "男" : "女"}}</span>'},
 {field:"sex",displayName:"性别",cellTemplate:'{{formatSourceType(row[column.field]);}}'}
 ```
