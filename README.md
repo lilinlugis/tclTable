@@ -33,5 +33,5 @@ This project is support by Li Linlu, and any used in commertial bussiness should
 * [edit](https://github.com/lilinlugis/tclTable/blob/master/doc/edit.md)
 * [columnresize](https://github.com/lilinlugis/tclTable/blob/master/doc/columnresize.md)
 * [multiheader](https://github.com/lilinlugis/tclTable/blob/master/doc/multiheader.md)
-* [bisizestable](https://github.com/lilinlugis/tclTable/blob/master/doc/bisizestable.md)
+* [bisizestable](https://github.com/lilinlugis/tclTable/blob/master/doc/besizestable.md)
 * [complextable](https://github.com/lilinlugis/tclTable/blob/master/doc/complextable.md)
