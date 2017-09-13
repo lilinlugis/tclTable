@@ -12,19 +12,19 @@ Table with configuration in Angular controller $scope object and structure HTML 
 * 3、**两列表**`table-besides-columns`，又叫冻结表，可以实现列冻结和多行表头，由左右两个table实现。
 * 4、**复杂表**`complex-table-multi-columns`，在两列表的基础上实现表头固定，表体滚动的效果，由四个table实现。
 
-# enviroments 
+# Enviroments 
 This project based on [FIS3](http://fis.baidu.com) to do the compile work, cause the tcl.table module is write in ES6 and SASS. You can also use other tools such as webpack or gulp.
 
 因为tcl.table模块是使用ES6和SASS来写的，因此需要脚手架来完成编译的工作，你也可以使用其他构建工具，比如webpack或gulp。
 
-I used nginx as web server，you can use other webserver such as tomcat or JS server write with nodeJS.
+I used Nginx as web server，you can use other webserver such as tomcat or JS server write with nodeJS.
 
-我使用了nginx做为web server,你也可以使用其他服务器软件，比如tomcat或者自己用nodeJS写一个。
+我使用了Nginx做为web server,你也可以使用其他服务器软件，比如Tomcat或者自己用Node写一个。
 
-# demonstrations
+# Demonstrations
 This project is support by Li Linlu, and any used in commertial bussiness should has a MIT contract.
 
-本项目作者是李林禄，任何商业用途都需要包含MIT协议。
+本项目作者是李林禄，欢迎一起探讨。
 
 # 文档
 * [introduction](https://github.com/lilinlugis/tclTable/blob/master/doc/introduction.md)
