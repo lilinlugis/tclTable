@@ -35,3 +35,21 @@ function loadPageData(page){
 	//then set the response data to dataTable.data，and the total rows to dataTable.totalItems; set the loading to false;
 }
 ```
+
+## seek和seekToPage方法
+有时要把页码重置为第一页，或者在把数据改变为某一页后让页码也置为指定的一页，则需要有办法操控分页器，指令在dataTable上添加了两个方法可以完成这种功能。
+* *seek* 这个方法会把页码置为指令的页，但不会触发pageChange事件，适用于：用户主动改变了data里的数据为某一页，再让分页器显示为那一页；
+```js
+$scope.dataTable.seek(1);
+loadPage(1);
+``` 
+* *seekToPage* 这个方法分触发pageChange事件，所以调用此方法后在事件里加载数据即可。
+```js
+$scope.dataTable.seekToPage(1);
+...
+on:{
+	pageChanged(from,to){
+		loadPage(to);
+	}
+}
+```
